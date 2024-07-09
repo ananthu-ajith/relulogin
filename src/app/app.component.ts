@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { initializeApp } from "firebase/app";
+import { firebaseConfig } from '../../firebaseConfig';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +12,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'reluFed';
+  constructor(){
+    initializeApp(firebaseConfig);
+  }
 }

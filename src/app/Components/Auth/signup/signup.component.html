@@ -1,0 +1,42 @@
+<main>
+  <div class="formcontainer">
+  <h1>Sign Up</h1>
+  <p class="intro">Welcome</p>
+
+<form #regiserForm="ngForm">
+  <h4>Please Signup</h4>
+  <input
+    type="email"
+    placeholder="email here"
+    required
+    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+    ngModel
+    name="email"
+    #email="ngModel"
+  />
+  <h5 [hidden]="email.valid || email.untouched">Enter correct email</h5>
+  <input
+    type="password"
+    placeholder="password here"
+    required
+    minlength="6"
+    ngModel
+    name="password"
+    #password="ngModel"
+  />
+  <h5 [hidden]="password.valid || password.untouched">
+    Password is required and minimum 6 charachters </h5>
+  <button class="btnsign" [disabled]="regiserForm.invalid" (click)="register(regiserForm)">
+    Sign up
+  </button>
+  <button class="btnre" (click)="reset(regiserForm)">Reset</button>
+</form>
+
+<div class="log">
+  <label>Already a member?</label> 
+  <a routerLink="/login" routerLinkActive="active">Login</a>
+</div>
+
+
+</div>
+</main>

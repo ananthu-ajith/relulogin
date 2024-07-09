@@ -1,0 +1,110 @@
+main {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(../../../../assets/Images/signup.jpg);
+    background-size: cover;
+    background-position: center;
+   
+  
+    .formcontainer {
+      width: 40%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.2);
+      right: 0;
+  
+      h1 {
+        text-align: center;
+        margin-top: 5vh;
+        color: white;
+      }
+  
+      .intro {
+        text-align: center;
+        margin-top: 3vh;
+        margin-bottom: 5%;
+        font-size: 18px;
+        font-weight: 550;
+        color: white;
+      }
+
+      form {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        h4 {
+            font-size: 24px;
+            margin-bottom: 20px;
+          }
+          input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+          }
+
+          h5{
+            color: red;
+            font-size: 14px;
+            // margin-top: 5px;
+            margin-bottom: 5px;
+          }
+          .btnsign, .btnre {
+            padding: 10px 15px;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+            text-transform: uppercase;
+          }
+          
+          .btnsign {
+            background-color: #4CAF50;
+          }
+          
+          .btnre {
+            background-color: #f74235;
+            margin-left: 20px;
+          }
+          
+          .btnsign:disabled, .btnre:disabled {
+            background-color: #4d4d4d;
+            cursor: not-allowed;
+          }
+
+      }
+
+      .log
+      {
+          max-width: 400px;
+          margin: 0 auto;
+          margin-top: 5% ;
+  
+          label
+          {
+              color: white;
+              display: inline-block;
+              font-size: 16px;
+          }
+          a
+          {
+              text-decoration: none;
+              margin-left: 10px;
+              color: rgb(15, 224, 231);
+              font-size: 16px;
+  
+          }
+          
+      }
+  
+  
+    }
+  }

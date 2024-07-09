@@ -1,0 +1,99 @@
+main {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../../../assets/Images/login.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  
+    .formcontainer {
+      width: 40%;
+      height: auto;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      padding: 50px 30px;
+
+
+      form {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      h4 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+      }
+      
+      h5 {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+      
+      .btnlog, .btnre {
+        padding: 10px 15px;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        border-radius: 3px;
+        text-transform: uppercase;
+      }
+      
+      .btnlog {
+        background-color: #4CAF50;
+      }
+      
+      .btnre {
+        background-color: #f44336;
+        margin-left: 20px;
+      }
+      
+      .btnlog:disabled, .btnre:disabled {
+        background-color: #ddd;
+        cursor: not-allowed;
+      }
+      
+      .sign
+      {
+          max-width: 400px;
+          // margin: 0 auto;
+          margin-top: 10px ;
+  
+          label
+          {
+              color: white;
+              display: inline-block;
+              font-size: 16px;
+          }
+          a
+          {
+              text-decoration: none;
+              margin-left: 10px;
+              color: rgb(15, 224, 231);
+              font-size: 16px;
+  
+          }
+          
+      }
+
+
+    }
+}
